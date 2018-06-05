@@ -10,7 +10,9 @@ def get_index():
     
 @app.route("/results")
 def results():
-    return render_template("results.html")
+    results = [{"id":"1003621045931331585","text":"heeeeeeeres michael!!!"},
+               {"id":"1003667267794632704", "text":"Michael likes this."}]
+    return render_template("results.html", tweets = results)
     
     
 if __name__ == '__main__':
