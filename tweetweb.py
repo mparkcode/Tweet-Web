@@ -14,6 +14,7 @@ def results():
     q = request.args.get("q")
     tweets = search(q,10)
     return render_template("results.html", tweets=tweets)
+
     
     
 if __name__ == '__main__':
